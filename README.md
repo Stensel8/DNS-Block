@@ -1,5 +1,5 @@
 # DNS-Block
- My own repository, containing blocked DNS domains.
+Repository containing blocked DNS domains.
 
 # 🎯 DNS Blocklists for Privacy, Anti-AI, and Anti-Tracking
 
