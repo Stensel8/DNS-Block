@@ -175,19 +175,22 @@ galaxystore.samsung.com
 
 This list is used on **NextDNS** as part of a private configuration. It complements the following well-known and heavily maintained blocklists which I also use and recommend:
 
-- **HaGeZi - Multi ULTIMATE**
-- **Ultimate Sweeper**
-- **NextDNS Ads & Trackers Blocklist**
-- **AdGuard DNS Filter**
-- **OISD Full**
-- **AdGuard Mobile Ads Filter**
-- **EasyList / EasyPrivacy**
-- **AdGuard Tracking Protection Filter**
-- **Steven Black's Unified Hosts**
-- **Goodbye Ads (Mobile Focused)**
-- **notracking**
-- **Lightswitch05 - Ads & Tracking**
-- **1Hosts (Pro)**
+- [HaGeZi - Multi ULTIMATE](https://github.com/hagezi/dns-blocklists)
+- [Ultimate Sweeper](https://github.com/hagezi/dns-blocklists)
+- [NextDNS Ads & Trackers Blocklist](https://nextdns.io)
+- [AdGuard DNS Filter](https://github.com/AdguardTeam/AdguardSDNSFilter)
+- [OISD Full](https://oisd.nl/)
+- [AdGuard Mobile Ads Filter](https://kb.adguard.com/en/general/adguard-ad-filters)
+- [EasyList](https://easylist.to/)
+- [EasyPrivacy](https://easylist.to/)
+- [AdGuard Tracking Protection Filter](https://kb.adguard.com/en/general/adguard-ad-filters)
+- [Steven Black's Unified Hosts](https://github.com/StevenBlack/hosts)
+- [Goodbye Ads (Mobile Focused)](https://github.com/jerryn70/GoodbyeAds)
+- [notracking](https://github.com/notracking/hosts-blocklists)
+- [Lightswitch05 - Ads & Tracking](https://www.github.developerdan.com/hosts/)
+- [1Hosts (Pro)](https://github.com/badmojr/1Hosts)
+
+These blocklists are updated in real-time and cover ads, telemetry, scam sites, fake shops, spyware, crypto miners, analytics, and more.
 
 ---
 
