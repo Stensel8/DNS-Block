@@ -175,8 +175,7 @@ galaxystore.samsung.com
 
 This list is used on **NextDNS** as part of a private configuration. It complements the following well-known and heavily maintained blocklists which I also use and recommend:
 
-- [HaGeZi - Multi ULTIMATE](https://github.com/hagezi/dns-blocklists)
-- [Ultimate Sweeper](https://github.com/hagezi/dns-blocklists)
+- [HaGeZi - Multi PRO++](https://github.com/hagezi/dns-blocklists)
 - [NextDNS Ads & Trackers Blocklist](https://nextdns.io)
 - [AdGuard DNS Filter](https://github.com/AdguardTeam/AdguardSDNSFilter)
 - [OISD Full](https://oisd.nl/)
