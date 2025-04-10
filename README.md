@@ -175,20 +175,54 @@ galaxystore.samsung.com
 
 This list is used on **NextDNS** as part of a private configuration. It complements the following well-known and heavily maintained blocklists which I also use and recommend:
 
-- [HaGeZi - Multi ULTIMATE](https://github.com/hagezi/dns-blocklists)
-- [Ultimate Sweeper](https://github.com/hagezi/dns-blocklists)
-- [NextDNS Ads & Trackers Blocklist](https://nextdns.io)
-- [AdGuard DNS Filter](https://github.com/AdguardTeam/AdguardSDNSFilter)
-- [OISD Full](https://oisd.nl/)
-- [AdGuard Mobile Ads Filter](https://kb.adguard.com/en/general/adguard-ad-filters)
-- [EasyList](https://easylist.to/)
-- [EasyPrivacy](https://easylist.to/)
-- [AdGuard Tracking Protection Filter](https://kb.adguard.com/en/general/adguard-ad-filters)
-- [Steven Black's Unified Hosts](https://github.com/StevenBlack/hosts)
-- [Goodbye Ads (Mobile Focused)](https://github.com/jerryn70/GoodbyeAds)
-- [notracking](https://github.com/notracking/hosts-blocklists)
-- [Lightswitch05 - Ads & Tracking](https://www.github.developerdan.com/hosts/)
-- [1Hosts (Pro)](https://github.com/badmojr/1Hosts)
+- [**NextDNS Ads & Trackers Blocklist**](https://nextdns.io/)  
+  A beginner-friendly blocklist to block ads and trackers globally.
+
+- [**HaGeZi - Multi PRO++**](https://github.com/hagezi/dns-blocklists)  
+  Aggressive list that blocks ads, trackers, phishing, malware, scams, and more.
+
+- [**AdGuard DNS Filter**](https://github.com/AdguardTeam/AdguardSDNSFilter)  
+  Combines several AdGuard filters, optimized for DNS-level ad blocking.
+
+- [**OISD Blocklist**](https://oisd.nl)  
+  All-in-one blocklist for ads, tracking, malware, phishing, scams, and more.
+
+- [**AdGuard Tracking Protection Filter**](https://kb.adguard.com/general/adguard-ad-filters#tracking-protection-filter)  
+  Focuses on blocking online tracking, analytics, and counters.
+
+- [**AdGuard Mobile Ads Filter**](https://kb.adguard.com/general/adguard-ad-filters#mobile-ads-filter)  
+  Blocks known mobile ad networks.
+
+- [**AdGuard Base Filter**](https://kb.adguard.com/general/adguard-ad-filters#base-filter)  
+  Blocks ads on general English-language websites.
+
+- [**AdGuard Russian Filter**](https://kb.adguard.com/general/adguard-ad-filters#russian-filter)  
+  Removes ads from Russian-language websites.
+
+- [**EasyList**](https://easylist.to)  
+  The most popular general-purpose ad-blocking list.
+
+- [**EasyList Dutch**](https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html)  
+  Targets ads on Dutch-language websites.
+
+- [**EasyPrivacy**](https://easylist.to)  
+  Focuses specifically on blocking all forms of online tracking.
+
+- [**Steven Black Hosts**](https://github.com/StevenBlack/hosts)  
+  Merges several host files for ads, tracking, and malware protection.
+
+- [**Goodbye Ads**](https://github.com/jerryn70/GoodbyeAds)  
+  Designed for mobile ad blocking, including aggressive mobile ad networks.
+
+- [**notracking**](https://github.com/notracking/hosts-blocklists)  
+  Blocks ads, trackers, and general online garbage.
+
+- [**Lightswitch05 - Ads & Tracking**](https://www.github.developerdan.com/hosts)  
+  A highly expanded list focused on ads and tracking domains.
+
+- [**1Hosts (Pro)**](https://o0.pages.dev)  
+  Balanced blocklist against ads, tracking, and malware.
+
 
 These blocklists are updated in real-time and cover ads, telemetry, scam sites, fake shops, spyware, crypto miners, analytics, and more.
 
