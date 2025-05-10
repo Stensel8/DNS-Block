@@ -11,7 +11,7 @@ This is my personal DNS blocklist, used in combination with **NextDNS** to prote
 
 ## 📦 Blocklist Contents
 
-### Meta (Facebook, Instagram, WhatsApp)
+### Social trackers / Meta (Facebook, Instagram, WhatsApp)
 
 ```txt
 facebook.com
@@ -51,6 +51,7 @@ analytics.google.com
 s.youtube.com
 ads.google.com
 adservice.google.com
+whistleflower.com
 ```
 
 > Blocks Google Ads, AdSense, DoubleClick, Analytics, and tracking via YouTube. Core functionality of Google apps remains intact.
