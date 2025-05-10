@@ -238,5 +238,3 @@ By using these methods (including DNS blocking, DoH/DoT, and firewall rules), my
 ## License & Notes
 
 Feel free to use, fork, and share this blocklist. This is a personal effort to take back control over my devices and stop being profiled for profit. Privacy is a right, not a paid upgrade.
-
-> Protect your privacy, protect your family. 💪
