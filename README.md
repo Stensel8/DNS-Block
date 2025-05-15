@@ -103,6 +103,66 @@ ads-interfaces.sc-cdn.net
 
 ---
 
+## Chinese Marketplaces & E-commerce trackers
+
+```txt
+# Wish
+*.wish.com
+*.www.wish.com
+*.m.wish.com
+*.cdn.wish.com
+```
+> Blocks Wish's ads, tracking, and telemetry. Wish is known for its aggressive data collection practices.
+
+```txt
+# Temu
+*.temu.com
+*.eu.thtk.temu.com
+*.thtk.temu.com
+*.gw.temu.com
+*.ds.temu.com
+*.matk.temu.com
+*.temu-gtm.trafficmanager.net
+*.gw-temu-com.trafficmanager.net
+*.locale-temu-com.trafficmanager.net
+*.app-temu-com.trafficmanager.net
+*.temu-com.trafficmanager.net
+```
+> Blocks Temu's ads, tracking, and telemetry. Temu is known for its aggressive data collection practices.
+
+```txt
+# AliExpress / Alibaba ecosystem
+*.aliexpress.com
+*.www.aliexpress.com
+*.aliexpress-media.com
+*.assets.aliexpress-media.com
+*.alicdn.com
+*.alipayobjects.com
+*.aliexpress.ru
+*.ae-rus.ru
+*.ae-rus.net
+*.taobao.com
+*.alibaba.com
+*.slatic.net
+*.kwcdn.com
+*.kwcdn.co
+```
+> Blocks AliExpress, Alibaba, Taobao, and their associated tracking and telemetry. These domains are known for aggressive data collection practices.
+
+
+### Yahoo (Ads & Analytics)
+
+```txt
+log.fc.yahoo.com
+analytics.yahoo.com
+analytics.query.yahoo.com
+geo.yahoo.com
+udc.yahoo.com
+ads.yahoo.com
+ads.yap.yahoo.com
+```
+> Blocks Yahoo's ads, analytics, and tracking. Yahoo is known for its aggressive data collection practices.
+
 ### Scam, Fraud & Shady Domains
 
 ```txt
@@ -140,6 +200,16 @@ aliexpress.com
 
 ---
 
+### Samsung & Bixby Telemetry (non-critical)
+
+```txt
+ads.samsung.com
+*.smetrics.samsung.com
+provisioning-use2.mgmt.aibixby.com
+```
+> Blocks Samsung's ads and telemetry, including Bixby-related data collection. This is non-critical for device functionality.
+---
+
 ### Windows Telemetry (Non-critical)
 
 ```txt
@@ -172,7 +242,7 @@ galaxystore.samsung.com
 
 ---
 
-## Setup Info
+### Setup Info
 
 This list is used on **NextDNS** as part of a private configuration. It complements the following well-known and heavily maintained blocklists which I also use and recommend:
 
@@ -229,12 +299,12 @@ These blocklists are updated in real-time and cover ads, telemetry, scam sites, 
 
 ---
 
-## 📊 Results
+### 📊 Results
 
-By using these methods (including DNS blocking, DoH/DoT, and firewall rules), my network blocks between **26–39%** of all traffic on average. That’s thousands of tracking/telemetry requests stopped before they even leave the device.
+By using these methods (including DNS blocking, DoH/DoT, and firewall rules), my network blocks between **22–37%** of all traffic on average. That’s thousands of tracking/telemetry requests stopped before they even leave the device.
 
 ---
 
-## License & Notes
+### License & Notes
 
 Feel free to use, fork, and share this blocklist. This is a personal effort to take back control over my devices and stop being profiled for profit. Privacy is a right, not a paid upgrade.
