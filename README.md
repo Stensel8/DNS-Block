@@ -82,6 +82,19 @@ analytics.tiktok.com
 ads.tiktok.com
 mon.tiktokv.com
 api.tiktokv.com
+tiktokv.com.ttdns2.com
+bytedance.map.fastly.net
+bytefcdn-ttpeu.com
+bytefcdn-oversea.com
+byteoversea.net
+bytedance.com
+musical.ly
+tiktokv.com
+tiktok.com
+tiktokv.eu
+tiktokcdn-us.com
+tiktokcdn.com
+tiktokcdn-eu.com
 ```
 
 > Blocks TikTok telemetry, tracking and ad delivery. Prevents external surveillance without fully breaking TikTok.
@@ -122,6 +135,7 @@ ads-interfaces.sc-cdn.net
 *.gw.temu.com
 *.ds.temu.com
 *.matk.temu.com
+*.pftk.temu.com
 *.temu-gtm.trafficmanager.net
 *.gw-temu-com.trafficmanager.net
 *.locale-temu-com.trafficmanager.net
