@@ -208,6 +208,7 @@ aliexpress.com
 *.widgets.pinterest.com
 *.browser.sentry-cdn.com
 *.smetrics.samsung.com
+*.bixbyllm.com
 ```
 
 > Blocks Pinterest's embedded social trackers, Samsung telemetry on mobile/TV, and error tracking via Sentry.
