@@ -1,0 +1,44 @@
+# Google Tracking Blocking List
+# 
+# This list blocks Google tracking and analytics domains to prevent:
+# - Google Analytics data collection
+# - Google Ads tracking and targeting
+# - DoubleClick advertising network
+# - Cross-site tracking and profiling
+# - Android telemetry and unnecessary data collection
+#
+# Note: This does NOT block core Google services like Search, Gmail, Maps
+# Format: 0.0.0.0 domain.com (hosts file format)
+# Last updated: 2025-10-12
+#
+# Total domains: 28
+#
+
+0.0.0.0	ad.doubleclick.net
+0.0.0.0	adnxs.com
+0.0.0.0	ads.google.com
+0.0.0.0	adservice.google.com
+0.0.0.0	admob.googleapis.com
+0.0.0.0	analytics.google.com
+0.0.0.0	doubleclick.net
+0.0.0.0	google-analytics.com
+0.0.0.0	googleadservices.com
+0.0.0.0	googleads.g.doubleclick.net
+0.0.0.0	googlesyndication.com
+0.0.0.0	googletagmanager.com
+0.0.0.0	googletagservices.com
+0.0.0.0	googlevideo.com
+0.0.0.0	pagead2.googlesyndication.com
+0.0.0.0	partnerad.l.doubleclick.net
+0.0.0.0	stats.g.doubleclick.net
+0.0.0.0	tpc.googlesyndication.com
+0.0.0.0	www.google-analytics.com
+0.0.0.0	www.googleadservices.com
+0.0.0.0	www.googletagmanager.com
+0.0.0.0	www.googletagservices.com
+0.0.0.0	ade.googlesyndication.com
+0.0.0.0	cm.g.doubleclick.net
+0.0.0.0	securepubads.g.doubleclick.net
+0.0.0.0	tagger.opecloud.com
+0.0.0.0	whistleflower.com
+0.0.0.0	yt3.ggpht.com

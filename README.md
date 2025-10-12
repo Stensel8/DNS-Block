@@ -1,325 +1,73 @@
-# DNS-Block
-Repository containing blocked DNS domains.
-
-# 🎯 DNS Blocklists for Privacy, Anti-AI, and Anti-Tracking
-
-This is my personal DNS blocklist, used in combination with **NextDNS** to protect myself and my family against unwanted tracking, unnecessary AI background activity, advertisements, scam websites, and telemetry. It’s tailored to block what *I* consider shady, sketchy, or just plain invasive.
-
-> **If I want to use AI services, I'm doing that whenever I want. Not when they want. I want to use AI on my own and not in the background, tracking me and collecting my data.**
-
----
-
-## 📦 Blocklist Contents
-
-### Social trackers / Meta (Facebook, Instagram, WhatsApp)
-
-```txt
-facebook.com
-connect.facebook.net
-fbcdn.net
-fbcdn.com
-fbsbx.com
-instagram.com
-cdninstagram.com
-instagram.net
-atdmt.com
-atlassolutions.com
-whatsapp.com
-wa.me
-dit.whatsapp.net
-meta.ai
-wit.ai
-graph.facebook.com
-```
-
-> Blocks Meta's trackers, AI assistant communication, ad networks, and telemetry across Facebook, Instagram, and WhatsApp.
-
----
-
-### Google (Ads & Analytics)
-
-```txt
-doubleclick.net
-ad.doubleclick.net
-googleads.g.doubleclick.net
-googlesyndication.com
-pagead2.googlesyndication.com
-googleadservices.com
-www.googleadservices.com
-google-analytics.com
-analytics.google.com
-s.youtube.com
-ads.google.com
-adservice.google.com
-whistleflower.com
-```
-
-> Blocks Google Ads, AdSense, DoubleClick, Analytics, and tracking via YouTube. Core functionality of Google apps remains intact.
-
----
-
-### Amazon (Ads & Telemetry)
-
-```txt
-amazon-adsystem.com
-aax.amazon-adsystem.com
-fls-na.amazon.com
-device-metrics-us.amazon.com
-affiliationjs.s3.amazonaws.com
-advice-ads.s3.amazonaws.com
-analyticsengine.s3.amazonaws.com
-adtago.s3.amazonaws.com
-```
-
-> Blocks Amazon ads and tracking/telemetry scripts, including third-party trackers hosted on S3 buckets.
-
----
-
-### TikTok
-
-```txt
-analytics.tiktok.com
-ads.tiktok.com
-mon.tiktokv.com
-api.tiktokv.com
-tiktokv.com.ttdns2.com
-bytedance.map.fastly.net
-bytefcdn-ttpeu.com
-bytefcdn-oversea.com
-byteoversea.net
-bytedance.com
-musical.ly
-tiktokv.com
-tiktok.com
-tiktokv.eu
-tiktokcdn-us.com
-tiktokcdn.com
-tiktokcdn-eu.com
-```
-
-> Blocks TikTok telemetry, tracking and ad delivery. Prevents external surveillance without fully breaking TikTok.
-
----
-
-### Snapchat
-
-```txt
-adsapi.snapchat.com
-app-analytics.snapchat.com
-snapads.com
-euw.adserver.snapads.com
-usc.adserver.snapads.com
-ads-interfaces.sc-cdn.net
-```
-
-> Removes ads, telemetry and AI-related features in Snapchat while keeping core chat/Snap functionality intact.
-
----
-
-## Chinese Marketplaces & E-commerce trackers
-
-```txt
-# Wish
-*.wish.com
-*.www.wish.com
-*.m.wish.com
-*.cdn.wish.com
-```
-> Blocks Wish's ads, tracking, and telemetry. Wish is known for its aggressive data collection practices.
-
-```txt
-# Temu
-*.temu.com
-*.eu.thtk.temu.com
-*.thtk.temu.com
-*.gw.temu.com
-*.ds.temu.com
-*.matk.temu.com
-*.pftk.temu.com
-*.temu-gtm.trafficmanager.net
-*.gw-temu-com.trafficmanager.net
-*.locale-temu-com.trafficmanager.net
-*.app-temu-com.trafficmanager.net
-*.temu-com.trafficmanager.net
-```
-> Blocks Temu's ads, tracking, and telemetry. Temu is known for its aggressive data collection practices.
-
-```txt
-# AliExpress / Alibaba ecosystem
-*.aliexpress.com
-*.www.aliexpress.com
-*.aliexpress-media.com
-*.assets.aliexpress-media.com
-*.alicdn.com
-*.alipayobjects.com
-*.aliexpress.ru
-*.ae-rus.ru
-*.ae-rus.net
-*.taobao.com
-*.alibaba.com
-*.slatic.net
-*.kwcdn.com
-*.kwcdn.co
-```
-> Blocks AliExpress, Alibaba, Taobao, and their associated tracking and telemetry. These domains are known for aggressive data collection practices.
-
-
-### Yahoo (Ads & Analytics)
-
-```txt
-log.fc.yahoo.com
-analytics.yahoo.com
-analytics.query.yahoo.com
-geo.yahoo.com
-udc.yahoo.com
-ads.yahoo.com
-ads.yap.yahoo.com
-```
-> Blocks Yahoo's ads, analytics, and tracking. Yahoo is known for its aggressive data collection practices.
-
-### Scam, Fraud & Shady Domains
-
-```txt
-*.proyalz.com
-*.proyalz.nl
-expertoutlets.nl
-vinomz.com
-itstylish.co
-fishproduct.nl
-toofacedshop.nl
-dealbeauty.nl
-fbwinkel.nl
-acadapterwinkel.nl
-dutch-lands.com
-dutchsport.net
-dylawear.com
-eco-motoroutlet.com
-temu.com
-aliexpress.com
-```
-
-> These domains are known or strongly suspected scam/fraud sites, often involved in phishing, dropshipping scams, or data collection schemes.
-
----
-
-### Miscellaneous Trackers, Telemetry & Widgets
-
-```txt
-*.widgets.pinterest.com
-*.browser.sentry-cdn.com
-*.smetrics.samsung.com
-*.bixbyllm.com
-```
-
-> Blocks Pinterest's embedded social trackers, Samsung telemetry on mobile/TV, and error tracking via Sentry.
-
----
-
-### Samsung & Bixby Telemetry (non-critical)
-
-```txt
-ads.samsung.com
-*.smetrics.samsung.com
-provisioning-use2.mgmt.aibixby.com
-```
-> Blocks Samsung's ads and telemetry, including Bixby-related data collection. This is non-critical for device functionality.
----
-
-### Windows Telemetry (Non-critical)
-
-```txt
-vortex.data.microsoft.com
-settings-win.data.microsoft.com
-watson.telemetry.microsoft.com
-telecommand.telemetry.microsoft.com
-oca.telemetry.microsoft.com
-sqm.telemetry.microsoft.com
-```
-
-> These are common Microsoft telemetry endpoints. Blocking them reduces background data collection while maintaining system stability and updates.
-
----
-
-## ✅ Safe Zones (DO NOT Block – Required for Android & Samsung functions)
-
-```txt
-connectivitycheck.android.com
-time.android.com
-android.clients.google.com
-play.googleapis.com
-fcm.googleapis.com
-push.samsungosp.com
-samsungcloud.com
-galaxystore.samsung.com
-```
-
-> Required for OS updates, network checks, Play Store, Samsung sync, and push notifications.
-
----
-
-### Setup Info
-
-This list is used on **NextDNS** as part of a private configuration. It complements the following well-known and heavily maintained blocklists which I also use and recommend:
-
-- [**NextDNS Ads & Trackers Blocklist**](https://nextdns.io/)  
-  A beginner-friendly blocklist to block ads and trackers globally.
-
-- [**HaGeZi - Multi PRO++**](https://github.com/hagezi/dns-blocklists)  
-  Aggressive list that blocks ads, trackers, phishing, malware, scams, and more.
-
-- [**AdGuard DNS Filter**](https://github.com/AdguardTeam/AdguardSDNSFilter)  
-  Combines several AdGuard filters, optimized for DNS-level ad blocking.
-
-- [**OISD Blocklist**](https://oisd.nl)  
-  All-in-one blocklist for ads, tracking, malware, phishing, scams, and more.
-
-- [**AdGuard Tracking Protection Filter**](https://kb.adguard.com/general/adguard-ad-filters#tracking-protection-filter)  
-  Focuses on blocking online tracking, analytics, and counters.
-
-- [**AdGuard Mobile Ads Filter**](https://kb.adguard.com/general/adguard-ad-filters#mobile-ads-filter)  
-  Blocks known mobile ad networks.
-
-- [**AdGuard Base Filter**](https://kb.adguard.com/general/adguard-ad-filters#base-filter)  
-  Blocks ads on general English-language websites.
-
-- [**AdGuard Russian Filter**](https://kb.adguard.com/general/adguard-ad-filters#russian-filter)  
-  Removes ads from Russian-language websites.
-
-- [**EasyList**](https://easylist.to)  
-  The most popular general-purpose ad-blocking list.
-
-- [**EasyList Dutch**](https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html)  
-  Targets ads on Dutch-language websites.
-
-- [**EasyPrivacy**](https://easylist.to)  
-  Focuses specifically on blocking all forms of online tracking.
-
-- [**Steven Black Hosts**](https://github.com/StevenBlack/hosts)  
-  Merges several host files for ads, tracking, and malware protection.
-
-- [**Goodbye Ads**](https://github.com/jerryn70/GoodbyeAds)  
-  Designed for mobile ad blocking, including aggressive mobile ad networks.
-
-- [**notracking**](https://github.com/notracking/hosts-blocklists)  
-  Blocks ads, trackers, and general online garbage.
-
-- [**Lightswitch05 - Ads & Tracking**](https://www.github.developerdan.com/hosts)  
-  A highly expanded list focused on ads and tracking domains.
-
-- [**1Hosts (Pro)**](https://o0.pages.dev)  
-  Balanced blocklist against ads, tracking, and malware.
-
-
-These blocklists are updated in real-time and cover ads, telemetry, scam sites, fake shops, spyware, crypto miners, analytics, and more.
-
----
-
-### 📊 Results
-
-By using these methods (including DNS blocking, DoH/DoT, and firewall rules), my network blocks between **22–37%** of all traffic on average. That’s thousands of tracking/telemetry requests stopped before they even leave the device.
-
----
-
-### License & Notes
-
-Feel free to use, fork, and share this blocklist. This is a personal effort to take back control over my devices and stop being profiled for profit. Privacy is a right, not a paid upgrade.
+# DNS Block Lists
+
+Simple DNS blocklists for blocking ads, tracking, and unwanted domains.
+
+## Available Lists
+
+**[tiktok.txt](tiktok.txt)** - TikTok/ByteDance blocking (6,600+ domains)
+- All TikTok and ByteDance domains
+- Analytics and tracking endpoints
+- CDN networks and mirrors
+
+**[meta.txt](meta.txt)** - Facebook/Meta blocking (45 domains)
+- Facebook, Instagram, WhatsApp
+- Meta AI and tracking pixels
+- Social media analytics
+
+**[google.txt](google.txt)** - Google tracking blocking (28 domains)
+- Google Analytics and Ads
+- DoubleClick advertising
+- AdMob and tracking (keeps core Google services)
+
+**[microsoft.txt](microsoft.txt)** - Microsoft telemetry blocking (24 domains)
+- Windows telemetry and diagnostics
+- Office usage analytics
+- Unnecessary data collection (keeps Windows Updates)
+
+**[chinese-shops.txt](chinese-shops.txt)** - Chinese marketplace blocking (42 domains)
+- Temu, AliExpress, Wish tracking
+- Shein and other platforms
+- Aggressive data collection networks
+
+**[scam.txt](scam.txt)** - Scam and fraud sites (14 domains)
+- Fake webshops and dropshipping scams
+- Known fraud domains
+- Phishing websites
+
+**[tracking.txt](tracking.txt)** - General tracking blocking (12 domains)
+- Third-party analytics
+- Social media widgets
+- Samsung and Yahoo tracking
+
+## How to use
+
+**NextDNS**
+1. Go to [nextdns.io](https://nextdns.io) and create account
+2. Settings > Security > Blocklists > Add custom domains
+3. Copy domains from the .txt files (remove the `0.0.0.0` part)
+
+**Pi-hole**
+1. Admin panel > Group Management > Adlists
+2. Add the raw GitHub URLs:
+   ```
+   https://raw.githubusercontent.com/Stensel8/DNS-Block/main/tiktok.txt
+   https://raw.githubusercontent.com/Stensel8/DNS-Block/main/meta.txt
+   https://raw.githubusercontent.com/Stensel8/DNS-Block/main/google.txt
+   ```
+3. Update gravity
+
+**AdGuard Home**
+1. Filters > DNS blocklists
+2. Add the raw GitHub URLs from above
+
+## Recommended public lists
+
+Use these well-maintained lists alongside the ones here:
+
+
+## Results
+
+DNS blocking typically stops 20-35% of network requests, preventing thousands of tracking attempts daily.
+## Allowed Domains (Exclusions)
+
+See [`allowlist.txt`](allowlist.txt) for the full list of domains that are excluded from blocking and will remain accessible. This allowlist is maintained to ensure important services and apps continue to work.

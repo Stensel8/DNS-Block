@@ -1,0 +1,30 @@
+# Scam Sites Blocking List
+# 
+# This list blocks known scam, fraud, and suspicious domains:
+# - Fake webshops and dropshipping scams
+# - Phishing and fraud websites
+# - Suspicious Dutch retail sites
+# - Known scam domains and their variants
+# - Deceptive online stores
+#
+# These domains are known for fraudulent activities, fake products, or scams
+# Format: 0.0.0.0 domain.com (hosts file format)
+# Last updated: 2025-10-12
+#
+# Total domains: 14
+#
+
+0.0.0.0	acadapterwinkel.nl
+0.0.0.0	dealbeauty.nl
+0.0.0.0	dutch-lands.com
+0.0.0.0	dutchsport.net
+0.0.0.0	dylawear.com
+0.0.0.0	eco-motoroutlet.com
+0.0.0.0	expertoutlets.nl
+0.0.0.0	fbwinkel.nl
+0.0.0.0	fishproduct.nl
+0.0.0.0	itstylish.co
+0.0.0.0	proyalz.com
+0.0.0.0	proyalz.nl
+0.0.0.0	toofacedshop.nl
+0.0.0.0	vinomz.com

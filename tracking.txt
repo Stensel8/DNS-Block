@@ -1,0 +1,27 @@
+# General Tracking Blocking List
+# 
+# This list blocks general tracking and analytics domains:
+# - Third-party analytics and tracking
+# - Social media widgets and pixels
+# - Static reporting and telemetry
+# - Cross-site tracking scripts
+# - Unwanted data collection
+#
+# Format: 0.0.0.0 domain.com (hosts file format)
+# Last updated: 2025-10-12
+#
+# Total domains: 12
+#
+
+0.0.0.0	aiden.learnwise.ai
+0.0.0.0	browser.sentry-cdn.com
+0.0.0.0	widgets.pinterest.com
+0.0.0.0	smetrics.samsung.com
+0.0.0.0	ads.samsung.com
+0.0.0.0	provisioning-use2.mgmt.aibixby.com
+0.0.0.0	ads.yahoo.com
+0.0.0.0	ads.yap.yahoo.com
+0.0.0.0	analytics.yahoo.com
+0.0.0.0	geo.yahoo.com
+0.0.0.0	log.fc.yahoo.com
+0.0.0.0	udc.yahoo.com

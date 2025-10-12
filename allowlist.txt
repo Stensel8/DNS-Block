@@ -1,0 +1,104 @@
+
+# Allowlist (Exclusions)
+# 
+# This list contains domains that are explicitly allowed and excluded from blocking.
+# These domains are maintained to ensure important services and apps continue to work.
+#
+# Format: 0.0.0.0 domain.com (hosts file format)
+# Last updated: 2025-10-12
+#
+# Total domains: 81
+#
+
+0.0.0.0	v10.events.data.microsoft.com
+0.0.0.0	web.vortex.data.microsoft.com
+0.0.0.0	watson.telemetry.microsoft.com
+0.0.0.0	v20.events.data.microsoft.com
+0.0.0.0	xsts.auth.xboxlive.com
+0.0.0.0	xflight.xboxlive.com
+0.0.0.0	xkms.xbolive.com
+0.0.0.0	xboxexperiencesprod.experimentation.xboxlive.com
+0.0.0.0	xbox.ipv6.microsoft.com
+0.0.0.0	v10.vortex-win.data.microsoft.com
+0.0.0.0	title.auth.xboxlive.com
+0.0.0.0	title.mgt.xboxlive.com
+0.0.0.0	notify.xboxlive.com
+0.0.0.0	settings-win.data.microsoft.com
+0.0.0.0	help.ui.xboxlive.com
+0.0.0.0	licensing.xboxlive.com
+0.0.0.0	device.auth.xboxlive.com
+0.0.0.0	eds.xboxlive.com
+0.0.0.0	ctldl.windowsupdate.com
+0.0.0.0	def-vef.xboxlive.com
+0.0.0.0	attestation.xboxlive.com
+0.0.0.0	cert.mgt.xboxlive.com
+0.0.0.0	settings-win.data.microsoft.com
+0.0.0.0	email.t.ticketmaster.nl
+0.0.0.0	dl.google.com
+0.0.0.0	learn.cisecurity.org
+0.0.0.0	support.prijsvrij.nl
+0.0.0.0	revanced.net
+0.0.0.0	getpagespeed.com
+0.0.0.0	emsecure.net
+0.0.0.0	contact.hema.nl
+0.0.0.0	kiyoh.com
+0.0.0.0	faas.marktplaats.nl
+0.0.0.0	admarkt.marktplaats.nl
+0.0.0.0	ad.doubleclick.net
+0.0.0.0	googleadservices.com
+0.0.0.0	galaxystore.samsung.com
+0.0.0.0	samsungcloud.com
+0.0.0.0	push.samsungosp.com
+0.0.0.0	fcm.googleapis.com
+0.0.0.0	play.googleapis.com
+0.0.0.0	android.clients.google.com
+0.0.0.0	time.android.com
+0.0.0.0	connectivitycheck.android.com
+0.0.0.0	rabobank.nl
+0.0.0.0	gpm.samsungqbe.com
+0.0.0.0	lcprd1.samsungcloudsolution.net
+0.0.0.0	osb-apps-v2.samsungqbe.com
+0.0.0.0	gateway.instagram.com
+0.0.0.0	facebook.com
+0.0.0.0	www.facebook.com
+0.0.0.0	saxion.eu.qualtrics.com
+0.0.0.0	drive.google.com
+0.0.0.0	wg-connect.net
+0.0.0.0	wireguard.com
+0.0.0.0	windscribe.com
+0.0.0.0	yahoo.com
+0.0.0.0	webos.com
+0.0.0.0	lgtvsdp.com
+0.0.0.0	lgappstv.com
+0.0.0.0	samsung.com
+0.0.0.0	samsung.net
+0.0.0.0	samsungcloudsolution.com
+0.0.0.0	akamaihd.net
+0.0.0.0	scdn.co
+0.0.0.0	tidal.com
+0.0.0.0	nefit-easy.com
+0.0.0.0	tuyaeu.com
+0.0.0.0	govee.com
+0.0.0.0	meethue.com
+0.0.0.0	philips-hue.com
+0.0.0.0	google.com
+0.0.0.0	gstatic.com
+0.0.0.0	googleapis.com
+0.0.0.0	akamai.net
+0.0.0.0	1.datadog.pool.ntp.org
+0.0.0.0	2.datadog.pool.ntp.org
+0.0.0.0	cloudflare.com
+0.0.0.0	spotify.com
+0.0.0.0	cloudflare.net
+0.0.0.0	cloudfront.net
+0.0.0.0	everestengagement.com
+0.0.0.0	sonos.com
+0.0.0.0	brave.com
+0.0.0.0	canyoublockit.com
+0.0.0.0	digidip.net
+0.0.0.0	pepper.com
+0.0.0.0	unifi.com
+0.0.0.0	ui.com
+0.0.0.0	ping.ui.com
+0.0.0.0	ips1.unifi-ai.com
+0.0.0.0	fw-update.ubnt.com
