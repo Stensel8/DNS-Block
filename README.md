@@ -64,6 +64,39 @@ Simple DNS blocklists for blocking ads, tracking, and unwanted domains.
 
 Use these well-maintained lists alongside the ones here:
 
+- **NextDNS Ads & Trackers Blocklist**: A beginner-friendly blocklist to block ads and trackers globally.
+
+- **HaGeZi - Multi PRO++**: Aggressive list that blocks ads, trackers, phishing, malware, scams, and more.
+
+- **AdGuard DNS Filter**: Combines several AdGuard filters, optimized for DNS-level ad blocking.
+
+- **OISD Blocklist**: All-in-one blocklist for ads, tracking, malware, phishing, scams, and more.
+
+- **AdGuard Tracking Protection Filter**: Focuses on blocking online tracking, analytics, and counters.
+
+- **AdGuard Mobile Ads Filter**: Blocks known mobile ad networks.
+
+- **AdGuard Base Filter**: Blocks ads on general English-language websites.
+
+- **AdGuard Russian Filter**: Removes ads from Russian-language websites.
+
+- **EasyList**: The most popular general-purpose ad-blocking list.
+
+- **EasyList Dutch**: Targets ads on Dutch-language websites.
+
+- **EasyPrivacy**: Focuses specifically on blocking all forms of online tracking.
+
+- **Steven Black Hosts**: Merges several host files for ads, tracking, and malware protection.
+
+- **Goodbye Ads**: Designed for mobile ad blocking, including aggressive mobile ad networks.
+
+- **notracking**: Blocks ads, trackers, and general online garbage.
+
+- **Lightswitch05 - Ads & Tracking**: A highly expanded list focused on ads and tracking domains.
+
+- **1Hosts (Pro)**: Balanced blocklist against ads, tracking, and malware.
+
+These blocklists are updated in real-time and cover ads, telemetry, scam sites, fake shops, spyware, crypto miners, analytics, and more.
 
 ## Results
 
