@@ -39,6 +39,11 @@ Simple DNS blocklists for blocking ads, tracking, and unwanted domains.
 - Social media widgets
 - Samsung and Yahoo tracking
 
+**[datto-kaseya.txt](datto-kaseya.txt)** - Datto RMM / Kaseya blocking (18 IPs, 5 domains)
+- Enterprise remote monitoring software
+- Network tracking and device discovery
+- Referenced: 2021 Kaseya ransomware attack
+
 ## How to use
 
 **NextDNS**
@@ -59,6 +64,13 @@ Simple DNS blocklists for blocking ads, tracking, and unwanted domains.
 **AdGuard Home**
 1. Filters > DNS blocklists
 2. Add the raw GitHub URLs from above
+
+## My Setup
+
+This is how I personally handle these blocks:
+
+- **IP blocks** Add these to your router or firewall to block traffic at the network level
+- **DNS blocks**: Add these to your DNS service (I use [NextDNS](https://nextdns.io)) to prevent domain resolution
 
 ## Recommended public lists
 
