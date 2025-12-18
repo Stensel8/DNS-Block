@@ -40,3 +40,4 @@
 0.0.0.0	kaseya.com
 0.0.0.0	datto.com
 0.0.0.0	centrastage.net
+0.0.0.0 infocyte.com
