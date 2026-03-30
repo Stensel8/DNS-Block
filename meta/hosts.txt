@@ -10,7 +10,7 @@
 # Format: 0.0.0.0 domain.com (hosts file format)
 # Last updated: 2025-10-12
 #
-# Total domains: 45
+# Total domains: 42
 #
 
 0.0.0.0	atdmt.com
@@ -18,7 +18,6 @@
 0.0.0.0	cdninstagram.com
 0.0.0.0	connect.facebook.net
 0.0.0.0	dit.whatsapp.net
-0.0.0.0	facebook.com
 0.0.0.0	fbcdn.com
 0.0.0.0	fbcdn.net
 0.0.0.0	fbsbx.com
@@ -29,7 +28,6 @@
 0.0.0.0	wa.me
 0.0.0.0	whatsapp.com
 0.0.0.0	wit.ai
-0.0.0.0	www.facebook.com
 0.0.0.0	www.instagram.com
 0.0.0.0	api.facebook.com
 0.0.0.0	api.instagram.com
@@ -38,7 +36,6 @@
 0.0.0.0	edge-chat.facebook.com
 0.0.0.0	edge-chat.instagram.com
 0.0.0.0	gateway.facebook.com
-0.0.0.0	gateway.instagram.com
 0.0.0.0	lookaside.facebook.com
 0.0.0.0	lookaside.fbsbx.com
 0.0.0.0	m.facebook.com

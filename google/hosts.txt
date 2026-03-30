@@ -11,7 +11,7 @@
 # Format: 0.0.0.0 domain.com (hosts file format)
 # Last updated: 2025-10-12
 #
-# Total domains: 28
+# Total domains: 27
 #
 
 0.0.0.0	ad.doubleclick.net

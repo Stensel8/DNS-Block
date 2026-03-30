@@ -1,118 +1,56 @@
 # DNS Block Lists
 
-Simple DNS blocklists for blocking ads, tracking, and unwanted domains.
+DNS blocklists for ads, tracking, and unwanted domains.
 
-## Available Lists
+## Lists
 
-**[tiktok.txt](tiktok.txt)** - TikTok/ByteDance blocking (6,600+ domains)
-- All TikTok and ByteDance domains
-- Analytics and tracking endpoints
-- CDN networks and mirrors
+Each list lives in its own folder with two formats:
 
-**[meta.txt](meta.txt)** - Facebook/Meta blocking (45 domains)
-- Facebook, Instagram, WhatsApp
-- Meta AI and tracking pixels
-- Social media analytics
+| Folder | Domains | Blocks |
+|---|---|---|
+| [tiktok/](tiktok/) | 6601 | TikTok, ByteDance |
+| [meta/](meta/) | 42 | Facebook, Instagram, Meta tracking |
+| [google/](google/) | 28 | Google Ads, Analytics, DoubleClick |
+| [microsoft/](microsoft/) | 22 | Windows telemetry |
+| [chinese-shops/](chinese-shops/) | 42 | Temu, AliExpress, Shein, Wish |
+| [scam/](scam/) | 14 | Known scam/fraud sites |
+| [tracking/](tracking/) | 31 | General tracking, Snapchat, Amazon Ads |
+| [datto-kaseya/](datto-kaseya/) | 6 | Datto RMM, Kaseya |
+| [allowlist/](allowlist/) | 125 | Explicitly allowed domains |
 
-**[google.txt](google.txt)** - Google tracking blocking (28 domains)
-- Google Analytics and Ads
-- DoubleClick advertising
-- AdMob and tracking (keeps core Google services)
+Each folder contains:
+- `hosts.txt` — hosts file format (`0.0.0.0 domain.com`), for Pi-hole and AdGuard Home
+- `domains.txt` — plain domain list, for NextDNS and other tools
 
-**[microsoft.txt](microsoft.txt)** - Microsoft telemetry blocking (24 domains)
-- Windows telemetry and diagnostics
-- Office usage analytics
-- Unnecessary data collection (keeps Windows Updates)
+## Usage
 
-**[chinese-shops.txt](chinese-shops.txt)** - Chinese marketplace blocking (42 domains)
-- Temu, AliExpress, Wish tracking
-- Shein and other platforms
-- Aggressive data collection networks
+**NextDNS** — via [nextdnsctl](https://github.com/danielmeint/nextdnsctl):
 
-**[scam.txt](scam.txt)** - Scam and fraud sites (14 domains)
-- Fake webshops and dropshipping scams
-- Known fraud domains
-- Phishing websites
+```sh
+pip install nextdnsctl
+nextdnsctl auth <api-key>
 
-**[tracking.txt](tracking.txt)** - General tracking blocking (12 domains)
-- Third-party analytics
-- Social media widgets
-- Samsung and Yahoo tracking
+# Replace denylist with all blocklists
+for list in tiktok meta google microsoft chinese-shops scam tracking datto-kaseya; do
+  nextdnsctl denylist import <profile-id> $list/domains.txt
+done
 
-**[datto-kaseya.txt](datto-kaseya.txt)** - Datto RMM / Kaseya blocking (18 IPs, 5 domains)
-- Enterprise remote monitoring software
-- Network tracking and device discovery
-- Referenced: 2021 Kaseya ransomware attack
+# Replace allowlist
+nextdnsctl allowlist clear <profile-id> --yes
+nextdnsctl allowlist import <profile-id> allowlist/domains.txt
+```
 
-## How to use
+**Pi-hole / AdGuard Home** — add the raw GitHub URLs as adlists:
 
-**NextDNS**
-1. Go to [nextdns.io](https://nextdns.io) and create account
-2. Settings > Security > Blocklists > Add custom domains
-3. Copy domains from the .txt files (remove the `0.0.0.0` part)
-
-**Pi-hole**
-1. Admin panel > Group Management > Adlists
-2. Add the raw GitHub URLs:
-   ```
-   https://raw.githubusercontent.com/Stensel8/DNS-Block/main/tiktok.txt
-   https://raw.githubusercontent.com/Stensel8/DNS-Block/main/meta.txt
-   https://raw.githubusercontent.com/Stensel8/DNS-Block/main/google.txt
-   ```
-3. Update gravity
-
-**AdGuard Home**
-1. Filters > DNS blocklists
-2. Add the raw GitHub URLs from above
-
-## My Setup
-
-This is how I personally handle these blocks:
-
-- **IP blocks** Add these to your router or firewall to block traffic at the network level
-- **DNS blocks**: Add these to your DNS service (I use [NextDNS](https://nextdns.io)) to prevent domain resolution
+```
+https://raw.githubusercontent.com/Stensel8/DNS-Block/main/tiktok/hosts.txt
+https://raw.githubusercontent.com/Stensel8/DNS-Block/main/meta/hosts.txt
+https://raw.githubusercontent.com/Stensel8/DNS-Block/main/google/hosts.txt
+```
 
 ## Recommended public lists
 
-Use these well-maintained lists alongside the ones here:
-
-- **NextDNS Ads & Trackers Blocklist**: A beginner-friendly blocklist to block ads and trackers globally.
-
-- **HaGeZi - Multi PRO++**: Aggressive list that blocks ads, trackers, phishing, malware, scams, and more.
-
-- **AdGuard DNS Filter**: Combines several AdGuard filters, optimized for DNS-level ad blocking.
-
-- **OISD Blocklist**: All-in-one blocklist for ads, tracking, malware, phishing, scams, and more.
-
-- **AdGuard Tracking Protection Filter**: Focuses on blocking online tracking, analytics, and counters.
-
-- **AdGuard Mobile Ads Filter**: Blocks known mobile ad networks.
-
-- **AdGuard Base Filter**: Blocks ads on general English-language websites.
-
-- **AdGuard Russian Filter**: Removes ads from Russian-language websites.
-
-- **EasyList**: The most popular general-purpose ad-blocking list.
-
-- **EasyList Dutch**: Targets ads on Dutch-language websites.
-
-- **EasyPrivacy**: Focuses specifically on blocking all forms of online tracking.
-
-- **Steven Black Hosts**: Merges several host files for ads, tracking, and malware protection.
-
-- **Goodbye Ads**: Designed for mobile ad blocking, including aggressive mobile ad networks.
-
-- **notracking**: Blocks ads, trackers, and general online garbage.
-
-- **Lightswitch05 - Ads & Tracking**: A highly expanded list focused on ads and tracking domains.
-
-- **1Hosts (Pro)**: Balanced blocklist against ads, tracking, and malware.
-
-These blocklists are updated in real-time and cover ads, telemetry, scam sites, fake shops, spyware, crypto miners, analytics, and more.
-
-## Results
-
-DNS blocking typically stops 20-35% of network requests, preventing thousands of tracking attempts daily.
-## Allowed Domains (Exclusions)
-
-See [`allowlist.txt`](allowlist.txt) for the full list of domains that are excluded from blocking and will remain accessible. This allowlist is maintained to ensure important services and apps continue to work.
+- **HaGeZi Multi PRO++** — ads, trackers, phishing, malware
+- **OISD** — all-in-one
+- **AdGuard DNS Filter** — ads and tracking
+- **EasyList + EasyPrivacy** — general purpose

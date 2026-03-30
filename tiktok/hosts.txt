@@ -1,4 +1,4 @@
-﻿# TikTok Comprehensive Blocking List
+# TikTok Comprehensive Blocking List
 # 
 # This list blocks TikTok and ByteDance domains to prevent:
 # - Video content loading
